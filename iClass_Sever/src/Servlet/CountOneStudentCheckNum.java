@@ -48,13 +48,13 @@ public class CountOneStudentCheckNum extends HttpServlet {
 		// TODO Auto-generated method stub
 		String subject_id = request.getParameter("subject_id");
 		String student_id = request.getParameter("student_id");
-		String ischeck = request.getParameter("ischeck");
-		int ischeck_num = Integer.parseInt(ischeck);
-		System.out.println("课程ID" + subject_id);
-		System.out.println("学生ID" + student_id);
+//		String ischeck = request.getParameter("ischeck");
+//		int ischeck_num = Integer.parseInt(ischeck);
+		System.out.println("课程ID:	" + subject_id);
+		System.out.println("学生ID:	" + student_id);
 		PrintWriter out = response.getWriter();
 		String count_sql = "select count(student_id) as all_check_num from all_check_info where subject_id= '"
-				+ subject_id + "' and student_id= '" + student_id + "' and ischeck = " + ischeck_num;
+				+ subject_id + "' and student_id= '" + student_id +"'";
 		try {
 			// 连接数据库
 			java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iclass?useSSL=false",
