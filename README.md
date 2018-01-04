@@ -1,4 +1,4 @@
-# iClass_Seve
+# iClass_Sever
 	这是一个基于android的大学课堂在线考勤App的服务端；
 	本项目从2017年3月开始立项；
 	5月确定技术方向；
