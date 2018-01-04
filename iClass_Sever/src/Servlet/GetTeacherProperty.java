@@ -66,7 +66,7 @@ public class GetTeacherProperty extends HttpServlet {
 			if (resultset.next()) {
 				// 通过字段检索
 				jsonobj.put("teacher_id", resultset.getString("teacher_id"));
-				jsonobj.put("teacher_id", resultset.getString("teacher_name"));
+				jsonobj.put("teacher_name", resultset.getString("teacher_name"));
 				jsonobj.put("teacher_sex", resultset.getInt("teacher_sex"));
 				jsonobj.put("teacher_college", resultset.getString("teacher_college"));
 			}

@@ -65,7 +65,7 @@ public class GetStudentProperty extends HttpServlet {
 			ResultSet resultset = statement.executeQuery(get_sql);
 			if (resultset.next()) {
 				// 通过字段检索
-				jsonobj.put("stduent_id", resultset.getString("student_id"));
+				jsonobj.put("student_id", resultset.getString("student_id"));
 				jsonobj.put("student_name", resultset.getString("student_name"));
 				jsonobj.put("student_sex", resultset.getInt("student_sex"));
 				jsonobj.put("student_college", resultset.getString("student_college"));
