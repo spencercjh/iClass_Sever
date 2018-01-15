@@ -49,7 +49,7 @@ public class GetStudentSubject extends HttpServlet {
 		String student_id = request.getParameter("student_id");
 		System.out.println("学生ID：	" + student_id);
 		PrintWriter out = response.getWriter();
-		String get_sql = "select * from student_"+student_id.trim();
+		String get_sql = "select * from relationship where student_id= '"+student_id+"'";
 		response.setContentType("text/json; charset=utf-8");
 		try {
 			// 连接数据库
@@ -65,9 +65,6 @@ public class GetStudentSubject extends HttpServlet {
 			while (resultset.next()) {
 				// 通过字段检索
 				jsonobj.put("subject_id", resultset.getString("subject_id"));
-				jsonobj.put("subject_name", resultset.getString("subject_name"));
-				jsonobj.put("teacher_name", resultset.getString("teacher_name"));
-				jsonobj.put("classroom", resultset.getString("classroom"));
 				jsonarray.add(jsonobj);
 			}
 			// 输入结果

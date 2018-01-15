@@ -23,33 +23,37 @@ import net.sf.json.JSONObject;
 @WebServlet("/GetAllStudent")
 public class GetAllStudent extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public GetAllStudent() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		doPost(request,response);
+	public GetAllStudent() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String subject_id=request.getParameter("subject_id");
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String subject_id = request.getParameter("subject_id");
 		System.out.println("课程ID：	" + subject_id);
 		PrintWriter out = response.getWriter();
-		String get_sql = "select * from subject_"+subject_id;
+		String get_sql = "select * from relationship where subject_id= '" + subject_id + "'";
 		response.setContentType("text/json; charset=utf-8");
 		try {
 			// 连接数据库
@@ -65,10 +69,6 @@ public class GetAllStudent extends HttpServlet {
 			while (resultset.next()) {
 				// 通过字段检索
 				jsonobj.put("student_id", resultset.getString("student_id"));
-				jsonobj.put("student_name", resultset.getString("student_name"));
-				jsonobj.put("student_sex", resultset.getInt("student_sex"));
-				jsonobj.put("student_class", resultset.getString("student_class"));
-				jsonobj.put("student_college", resultset.getString("student_college"));
 				jsonarray.add(jsonobj);
 			}
 			// 输入结果
