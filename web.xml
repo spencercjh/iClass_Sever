@@ -4587,6 +4587,18 @@
 	<!-- Project:iclass -->
 	<!-- servlet -->
 	<servlet>
+		<servlet-name>CountOneStudentAllCheck_Score_Good</servlet-name>
+		<servlet-class>Servlet.CountOneStudentAllCheck_Score_Good</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountCheckStudent_Good</servlet-name>
+		<servlet-class>Servlet.CountCheckStudent_Good</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>InsertCheckInfo_Teacher</servlet-name>
+		<servlet-class>Servlet.InsertCheckInfo_Teacher</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>GetStudentSubject</servlet-name>
 		<servlet-class>Servlet.GetStudentSubject</servlet-class>
 	</servlet>
@@ -4655,20 +4667,12 @@
 		<servlet-class>Servlet.GetOneTeacherSubject</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>InsertSubject</servlet-name>
-		<servlet-class>Servlet.InsertSubject</servlet-class>
-	</servlet>
-	<servlet>
 		<servlet-name>SetCheckSituationTrue</servlet-name>
 		<servlet-class>Servlet.SetCheckSituationTrue</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>SetCheckSituationFalse</servlet-name>
 		<servlet-class>Servlet.SetCheckSituationFalse</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>CreateStudentSubjectTable</servlet-name>
-		<servlet-class>Servlet.CreateStudentSubjectTable</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>GetSubjectClassType</servlet-name>
@@ -4706,8 +4710,228 @@
 		<servlet-name>QuaryCheckSituation</servlet-name>
 		<servlet-class>Servlet.QuaryCheckSituation</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>GetAllStudent</servlet-name>
+		<servlet-class>Servlet.GetAllStudent</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>InsertCheckInfo_Teacher_Help</servlet-name>
+		<servlet-class>Sevlet.InsertCheckInfo_Teacher_Help</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteCheckInfo_Teacher</servlet-name>
+		<servlet-class>Servlet.DeleteCheckInfo_Teacher</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryStudentClass</servlet-name>
+		<servlet-class>Servlet.QuaryStudentClass</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryStudentCollege</servlet-name>
+		<servlet-class>Servlet.QuaryStudentCollege</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryStudentSex</servlet-name>
+		<servlet-class>Servlet.QuaryStudentSex</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountCheckStudent_Late</servlet-name>
+		<servlet-class>Servlet.CountCheckStudent_Late</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryTeacherID</servlet-name>
+		<servlet-class>Servlet.QuaryTeacherID</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetHistorySubjectTimeandTh</servlet-name>
+		<servlet-class>Servlet.GetHistorySubjectTimeandTh</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateStudentSex</servlet-name>
+		<servlet-class>Servlet.UpdateStudentSex</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateTeacherSex</servlet-name>
+		<servlet-class>Servlet.UpdateTeacherSex</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateStudentCollege</servlet-name>
+		<servlet-class>Servlet.UpdateStudentCollege</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateTeacherCollege</servlet-name>
+		<servlet-class>Servlet.UpdateTeacherCollege</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetTeacherProperty</servlet-name>
+		<servlet-class>Servlet.GetTeacherProperty</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetStudentProperty</servlet-name>
+		<servlet-class>Servlet.GetStudentProperty</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateStudentClass</servlet-name>
+		<servlet-class>Servlet.UpdateStudentClass</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetStudentCheckInfo</servlet-name>
+		<servlet-class>Servlet.GetStudentCheckInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryClassroom</servlet-name>
+		<servlet-class>Servlet.QuaryClassroom</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryStudentDeviceCode</servlet-name>
+		<servlet-class>Servlet.QuaryStudentDeviceCode</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateStudentDeviceCode</servlet-name>
+		<servlet-class>Servlet.UpdateStudentDeviceCode</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>QuaryTeacherDeviceCode</servlet-name>
+		<servlet-class>Servelt.QuaryTeacherDeviceCode</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateTeacherDeviceCode</servlet-name>
+		<servlet-class>Servlet.UpdateTeacherDeviceCode</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountOneStudentAllCheck_Checkin</servlet-name>
+		<servlet-class>Servlet.CountOneStudentAllCheck_Checkin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountOneStudentAllCheck_PP</servlet-name>
+		<servlet-class>Servlet.CountOneStudentAllCheck_PP</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountOneStudentAllCheck_Late</servlet-name>
+		<servlet-class>Servlet.CountOneStudentAllCheck_Late</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountOneStudentAllCheck_AllTypes</servlet-name>
+		<servlet-class>Servlet.CountOneStudentAllCheck_AllTypes</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CountOneStudentAllCheck_Score_Bad</servlet-name>
+		<servlet-class>Servlet.CountOneStudentAllCheck_Score_Bad</servlet-class>
+	</servlet>
 	<!-- servlet -->
 	<!-- servlet-mapping -->
+	<servlet-mapping>
+		<servlet-name>CountOneStudentAllCheck_Score_Bad</servlet-name>
+		<url-pattern>/CountOneStudentAllCheck_Score_Bad</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountOneStudentAllCheck_Score_Good</servlet-name>
+		<url-pattern>/CountOneStudentAllCheck_Score_Good</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountOneStudentAllCheck_AllTypes</servlet-name>
+		<url-pattern>/CountOneStudentAllCheck_AllTypes</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountOneStudentAllCheck_Late</servlet-name>
+		<url-pattern>/CountOneStudentAllCheck_Late</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountOneStudentAllCheck_PP</servlet-name>
+		<url-pattern>/CountOneStudentAllCheck_PP</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountOneStudentAllCheck_Checkin</servlet-name>
+		<url-pattern>/CountOneStudentAllCheck_Checkin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateTeacherDeviceCode</servlet-name>
+		<url-pattern>/UpdateTeacherDeviceCode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryTeacherDeviceCode</servlet-name>
+		<url-pattern>/QuaryTeacherDeviceCode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateStudentDeviceCode</servlet-name>
+		<url-pattern>/UpdateStudentDeviceCode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryStudentDeviceCode</servlet-name>
+		<url-pattern>/QuaryStudentDeviceCode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryClassroom</servlet-name>
+		<url-pattern>/QuaryClassroom</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetStudentCheckInfo</servlet-name>
+		<url-pattern>/GetStudentCheckInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateStudentClass</servlet-name>
+		<url-pattern>/UpdateStudentClass</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetStudentProperty</servlet-name>
+		<url-pattern>/GetStudentProperty</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetTeacherProperty</servlet-name>
+		<url-pattern>/GetTeacherProperty</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateTeacherCollege</servlet-name>
+		<url-pattern>/UpdateTeacherCollege</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateStudentCollege</servlet-name>
+		<url-pattern>/UpdateStudentCollege</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateTeacherSex</servlet-name>
+		<url-pattern>/UpdateTeacherSex</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateStudentSex</servlet-name>
+		<url-pattern>/UpdateStudentSex</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryTeacherID</servlet-name>
+		<url-pattern>/QuaryTeacherID</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountCheckStudent_Late</servlet-name>
+		<url-pattern>/CountCheckStudent_Late</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CountCheckStudent_Good</servlet-name>
+		<url-pattern>/CountCheckStudent_Good</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryStudentCollege</servlet-name>
+		<url-pattern>/QuaryStudentCollege</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryStudentSex</servlet-name>
+		<url-pattern>/QuaryStudentSex</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>QuaryStudentClass</servlet-name>
+		<url-pattern>/QuaryStudentClass</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteCheckInfo_Teacher</servlet-name>
+		<url-pattern>/DeleteCheckInfo_Teacher</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InsertCheckInfo_Teacher</servlet-name>
+		<url-pattern>/InsertCheckInfo_Teacher</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetAllStudent</servlet-name>
+		<url-pattern>/GetAllStudent</url-pattern>
+	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>QuaryStudentScore</servlet-name>
 		<url-pattern>/QuaryStudentScore</url-pattern>
@@ -4739,10 +4963,6 @@
 	<servlet-mapping>
 		<servlet-name>GetStudentSubject</servlet-name>
 		<url-pattern>/GetStudentSubject</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CreateStudentSubjectTable</servlet-name>
-		<url-pattern>/CreateStudentSubjectTable</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>SetCheckSituationFalse</servlet-name>
@@ -4817,16 +5037,20 @@
 		<url-pattern>/GetSubjectProperty</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>InsertSubject</servlet-name>
-		<url-pattern>/InsertSubject</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
 		<servlet-name>UpdateStudentScore</servlet-name>
 		<url-pattern>/UpdateStudentScore</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>QuaryCheckSituation</servlet-name>
 		<url-pattern>/QuaryCheckSituation</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InsertCheckInfo_Teacher_Help</servlet-name>
+		<url-pattern>/InsertCheckInfo_Teacher_Help</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetHistorySubjectTimeandTh</servlet-name>
+		<url-pattern>/GetHistorySubjectTimeandTh</url-pattern>
 	</servlet-mapping>
 	<!-- servlet-mapping -->
 	<resource-ref>
@@ -4841,7 +5065,7 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	<!-- Project:iclass -->
-	
+
 	<!-- test -->
 	<servlet>
 		<servlet-name>DataServiceServlet</servlet-name>
