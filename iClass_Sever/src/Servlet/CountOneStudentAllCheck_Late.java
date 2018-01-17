@@ -53,7 +53,7 @@ public class CountOneStudentAllCheck_Late extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String count_sql = "SELECT COUNT(student_id) AS LATE FROM all_check_info WHERE student_id ='" + student_id
 				+ "' and subject_id='" + subject_id
-				+ " and ischeck <> 0 and ischeck <> 1 and ischeck <> 5 and ischeck <> -1";
+				+ "' and ischeck <> 0 and ischeck <> 1 and ischeck <> 5 and ischeck <> -1";
 		try {
 			// 连接数据库
 			java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iclass?useSSL=false",

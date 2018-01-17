@@ -53,7 +53,7 @@ public class CountOneStudentAllCheck_AllTypes extends HttpServlet {
 		System.out.println("课程ID:	" + subject_id);
 		PrintWriter out = response.getWriter();
 		String count_sql = "SELECT COUNT(student_id) AS ALLCHECK FROM all_check_info WHERE student_id ='" + student_id
-				+ "' and subject_id='" + subject_id + " and ischeck <> 0";
+				+ "' and subject_id='" + subject_id + "' and ischeck <> 0";
 		try {
 			// 连接数据库
 			java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iclass?useSSL=false",

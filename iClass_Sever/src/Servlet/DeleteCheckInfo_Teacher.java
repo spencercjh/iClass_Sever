@@ -54,7 +54,7 @@ public class DeleteCheckInfo_Teacher extends HttpServlet {
 		System.out.println("教师id：	" + teacher_id);
 		PrintWriter out = response.getWriter();
 		String delete_sql = "DELETE FROM `iclass`.`all_check_info` WHERE `subject_id`='" + subject_id
-				+ "' and`subject_th`='" + subject_th_num + "' and`student_id`='" + teacher_id + "'";
+				+ "' and`subject_th`=" + subject_th_num;
 
 		try {
 			// 连接数据库
